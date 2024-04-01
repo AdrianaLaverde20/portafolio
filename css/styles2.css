@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+    :root{
+            --primary-color:#000;
+            --secondary-color:#000;
+            --font-titles: 50px;
+            --font-subtitles: 22px;
+            --primary-tip:"Playfair Display", serif;font-style: normal;
+            --secondary-tip:"Lora", serif;font-style: normal;
+
+    }
+
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        /* estilos de la cabecera */
+    body{
+        margin: 0;
+    }
+    .arreglo{
+        margin-right: 0;
+    }
+    section{
+        position: absolute;
+        width: 100%;
+        overflow-x: hidden !important; 
+    }
+
+
+html{
+    scroll-behavior: smooth;
+    }
+header{
+    width:100%;
+    background:#000;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    }
+.bg-sena{
+    background: #000 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    font-family: var(--primary-tip);
+    font-size: 20px;
+}
+
+
+/* Items del menú a la derecha */
+nav .navbar-collapse{
+    justify-content: flex-end;
+}
+nav .navbar-collapse .nav-link{
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    margin: 0 30px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+}
+nav .navbar-collapse .nav-link:hover{
+    border-bottom: 1px solid rgba(204, 66, 181, 0.911);
+}
+nav .navbar-brand{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+nav .navbar-brand img{
+    width: 90px;
+    height: 80px;
+    transition: .5s;
+}
+nav .navbar-brand img:hover{
+    transform: scale(1.3);
+}
+/* estilos del header */
+.text{
+    padding: 160px ;
+    color: white;
+}
+.h1{
+    font-family: var(--primary-tip);
+    font-size:40px;
+}
+.p1{
+    font-family: var(--secondary-tip);
+    padding: 40px 0;
+    font-size: 20px;
+    color: white;
+}
+.btn::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .btn:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .btn::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsla(310, 58%, 36%, 0.973);
+    z-index: -1;
+    transition: transform .3s ease;
+  }
+  
+  .btn {
+    position: relative;
+    font-size: 20px;
+    font-family: var(--secondary-tip);
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0  9px 0 #d9d1d1;
+
+  }
+  @media (orientation: landscape) {
+    body {
+      grid-auto-flow: column;
+    }
+}  
+
+.img1{
+    top: 130px;
+    left: 60%;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    box-shadow:0 0 8px 8px  #a6808c;
+    border-radius: 50%;
+}
+h2{
+    font-family: var(--primary-tip);
+    color: white;
+}
+p{
+    font-family: var(--secondary-tip);
+    color: white;
+}
+.uno{
+    position: relative;
+    top: -90px;
+    z-index: 9;
+}
+.uno div{
+    border-right: 2px solid #fff;
+    padding-right: -30px;
+}
+/* Perfil personal */
+#perfil{
+    width: 100%;
+    position: relative;
+    padding-bottom: 120px;
+    background:var(--secondary-color);
+}
+#text{
+    font-size: 60px;
+    font-family: var(--primary-tip);
+}
+#perfil .hidden {
+    opacity:0;
+  }
+#perfil  .console-container {
+
+font-family:var(--primary-tip);
+font-size:6em;
+text-align:center;
+height:200px;
+width:600px;
+display:block;
+position:absolute;
+color:white;
+top:0;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+}
+#perfil  .console-underscore {
+    display:inline-block;
+position:relative;
+top:-0.14em;
+left:10px;
+}
+#perfil .ciculo1{
+    border-radius: 350px;
+    border: 5px solid #000;
+    z-index: 5;
+}
+#perfil  .img2{
+    position: relative;
+    top: 150px;
+    left: 30%;
+    height: 512px;
+    width: 296px;
+    border-radius: 350px;
+    box-shadow:0 0 8px 8px  #a6808c;
+
+}
+
+#perfil .text1{
+    padding-top: 160px;
+    padding-right: 200px;
+    color: wheat;
+}
+#perfil p{
+    padding-top: 50px;
+    font-size:20px;
+    color: wheat;
+}
+
+#perfil .icon{
+    width: 100px;
+    width: 100px;
+    border-radius: 45%;
+    background: #a6808c;
+    box-shadow:0 0 9px 0 #a6808c;
+    
+}
+#perfil h2{
+    color: wheat;
+    font-size: 35px;  
+}
+/* habilides */
+#habilidades {
+    width: 100%;
+    position: relative;
+    background: var(--primary-color);
+}
+#habilidades h1{    
+    font-family: var(--primary-tip);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 15px;
+    color: wheat;
+}
+#habilidades h2{
+    font-family: var(--primary-tip);
+    font-size: 40px;
+    text-align: center;
+    color: wheat;
+}
+
+#habilidades .col-md-3{
+    padding: 20px; 
+    margin: 0 20px 20px 20px;
+    width: 400px;
+}
+
+#habilidades .col-md-3 h2,p{
+    color: #000;
+
+}
+.cont-cartas{
+    width: 100%;
+}
+.col-md-4{
+    width: 30%;
+    margin: 15px;
+    padding: 15px;
+    background: var(--secondary-color);
+    box-shadow: 0 0  9px 0 #d9d1d1;
+    border-radius: 20px;
+
+}
+.col-md-4:hover{
+    width: 30%;
+    margin: 15px;
+    padding: 15px;
+    background: #ccb3b363;
+    box-shadow: 0 0  9px 0 #363030;
+    border-radius: 20px;
+
+    }
+.col-md-4 p{
+    font-size: 18px !important;
+    color: white;
+}
+.col-md-4 h2{
+    font-size: 25px !important;
+    color: white;
+}
+.col-md-4 img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.col-md-4 img:hover{
+    transform:scale(0.8)
+}
+#reviews {
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    background:var(--secondary-color);
+}
+#reviews .principal{
+    position: absolute;
+    padding-top: 60px;
+    height: 600px;
+    right: 30px;
+    
+
+}
+#reviews .carousel-inner img{
+    width: 830px;
+    height: 460px;
+    box-shadow: 0 0  10px 0 #d9d1d1;
+}
+#reviews .carru{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    padding-top:60px ;
+}
+#reviews .carru h1{
+    text-align: center;
+    font-family: var(--primary-tip);
+    font-size: 40px;
+    color: wheat;
+}
+#reviews .carru img{
+    position: relative;
+    left: 42%;
+    top: 30%;
+    width: 110px;
+    height: 90px;
+}
+#reviews .carru p{
+    padding-top: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+    text-align: center;
+    font-family: var(--secondary-tip);
+    font-size: 20px;
+    color: white;
+}
+#collapseOne {
+    background: transparent !important;
+}
+.accordion-body {
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+  }
+#acordeon .accordion{
+    position: relative;
+    top: 600px;
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow:0 0 9px 0  #a6808c;
+}
+#acordeon .accordion-button h2{
+    color:wheat;
+    text-align: center;
+    font-size: 20px;
+}
+#acordeon .accordion-button{
+    text-align: center;
+    background: #000;
+    transition: 1s;
+}
+
+#hobbies{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background:var(--primary-color);
+}
+
+#hobbies .row{
+    box-sizing: border-box;
+}
+#hobbies .col-md-3{
+    position: relative;
+    top: 80px;
+    padding: 10px;
+    width: 24%;
+    margin: 0 auto;
+    text-align: center;
+}
+#hobbies .col-md-3 h2{
+    color: wheat;
+    padding: 10px;
+    font-size: 40px;
+}
+#hobbies .col-md-3 p{
+    color:white;
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+
+#hobbies .col-md-3 img{
+    box-sizing: border-box;
+    z-index: 4;
+    box-shadow:0 0 9px 0  #a6808c;
+}
+#hobbies .col-md-3 .parrafo{
+
+    z-index: 2;
+    font-size: 12px;
+}
+#hobbie{
+    width: 120px;
+    height:120px ;
+}
+#img1,#img2,#img3,#img4,#img5,#img6{
+    width: 100%;
+}
+#hobbies .col-md-3 .parrafo {
+    z-index: 2;
+    font-size: 14px;
+    opacity: 0; /* Inicialmente oculto */
+    position: absolute; /* Posicionamiento absoluto para que esté encima de la imagen */
+    top: 40%; /* Ajusta la posición verticalmente */
+    left: 10px; /* Ajusta la posición horizontalmente */
+    width: 95%; /* Ajusta el ancho para que ocupe toda la imagen */
+    background-color: rgba(65, 57, 57, 0.76); /* Fondo semi-transparente */
+    padding: 10px; /* Añade algo de espacio alrededor del texto */
+    transition: opacity 0.3s ease; /* Agrega una transición suave */
+}
+
+#hobbies .col-md-3:hover .parrafo {
+    opacity: 1; /* Muestra el párrafo cuando se hace hover */
+}
+
+#educacion {
+    width: 100%;
+    position: relative;
+    background: var(--secondary-color);
+}
+#educacion .col-md-6{
+    position: relative;
+    top: 40px;
+    padding: 30px;
+    text-align: center;
+}
+#educacion .col-md-6 h2{
+    color:wheat;
+    font-size: 40px;
+    padding: 30px;
+}
+#educacion .col-md-6 p{
+    color:white;
+    font-size: 20px;
+    padding: 40px;
+}
+#educacion .carousel-item{
+    max-width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    top: -30px;
+    left: 25%;
+    
+}
+
+#educacion .carousel-item img{
+    position: relative;
+    left: 90%;
+    width: 110px;
+    height: 110px;
+    bottom: 20px;
+}
+#educacion .carousel-item li h2{
+    position: relative;
+    top: 60px;
+    font-size: 23px;
+    background: var(--primary-tip);
+    color: white;
+}
+#carousel{
+    box-shadow:0 0 9px 0  #a6808c;
+}
+.visually-hidden{
+    color:white;
+}
+
+#redes{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background: #000;
+
+}
+ #redes ul {
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+  }
+  
+  #redes ul li {
+    list-style: none;
+  }
+  
+  #redes  ul li a {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    margin: 0 10px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow:hidden;
+    border: 3px solid #fff;
+    z-index: 1;
+    padding :0 15px;
+    
+    
+  }
+  
+  #redes ul li a .icon {
+    font-size: 40px;
+    position: relative;
+    color: #262626;
+    text-align: center;
+    transition: .5s;
+    z-index: 3;
+  }
+  
+  #redes ul li a:hover .icon {
+    color: #fff;
+    transform: rotateY(360deg);
+  }
+  
+  #redes ul li a:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+    z-index: 2;
+  }
+  
+  #redes ul li a:hover:before {
+    top: 0;
+  }
+  
+ #redes ul li:nth-child(1) a:before{
+    background: #3b5999;
+  }
+  
+  #redes ul li:nth-child(2) a:before{
+    background: #55acee;
+  }
+  
+  #redes ul li:nth-child(3) a:before {
+    background: #ad37db;
+  }
+  
+  #redes ul li:nth-child(4) a:before {
+    background: #dd4b39;
+  }
+  #btn-whats{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 999;
+    height: auto;
+    display: block;
+}
+
+#btn-whats img{
+    width: 75px;
+    transition: .5s;
+}
+#btn-whats img:hover{
+    transform: scale(.85);
+}
+#btn-whats button{
+    position: fixed;
+    background: transparent;
+    border: transparent;
+    transition: .5s;
+    bottom: 105px;
+}
+#btn-whats button img{
+    border: 1px solid var(--color3);
+    border-radius: 50%;
+}
+  @media screen and (min-width:320px) and (max-width: 430px) {
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    *h1{
+        font-size: 25px;
+    }
+    *p{
+        font-size: 20px;
+    }
+    section,header{
+        height: auto;
+    }
+
+    nav .navbar-brand img {
+        width: 50px;
+        height: auto;
+        transition: .5s;
+    }
+    .container1 .row{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .row{
+        text-align: center;
+        display: block; 
+        position: relative;
+    }
+    .col-md-6{
+        display: block;
+        position: relative;
+    }
+    .img1 {
+        position: relative;
+        top: -50px;
+        left:0;
+        width: 70%;
+        height: auto;
+    }
+    .text {
+        padding: 10px 10px;
+        padding-bottom: 150px;
+        color: white;
+    }
+    .p1{
+        padding: 0 10px;
+        text-align: left;
+    }
+    #text{
+        font-size: 25px;
+    }
+    #perfil .text1 {
+        position: relative;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: auto;
+        padding: 20px 15px 0 15px;
+    }
+    #perfil h1{
+        font-size: 25px;
+    }
+    #perfil p{
+        font-size: 20px;
+    }
+    #perfil .row{
+        display: block;
+    }
+    .img2{
+        position: relative;
+        border-radius: 350px;
+        left: 0 !important;
+        right: 2px !important;
+        top: 2px !important;
+    }
+    #habilidades h1 {
+        font-size: 25px;
+    }
+    .col-md-4 {
+        width: 100%;
+    }
+    #fila-rev{
+        position: relative;
+        top: 0;
+        right: 0;
+        display: block !important;
+    }
+    #reviews .principal{
+        position: relative;
+        padding-top: 140%;
+        height: auto;
+        right:0;
+    }
+    #reviews .carru img {
+        left: 0;
+    }
+    #reviews .carousel-inner img {
+        width: 400px;
+        height: 200px;
+    }
+    #reviews{
+        height: max-content
+    }
+    #acordeon .accordion{
+        position: relative;
+        top: 0;
+        max-width: 100%;
+        padding: 10px;
+    }
+    #hobbies{
+        height: auto;
+    }
+    #hobbies .col-md-3 {
+        position: relative;
+        top: 0;
+        width:100%;
+    }
+    #xD{
+        width: 100%;
+        box-sizing: border-box
+    }
+    #educacion .carousel-item img {
+        position: relative;
+        left: 0;
+        width: 110px;
+        height: 110px;
+        bottom: 205px;
+    }
+    #redes ul li a {
+        width: 60px;
+        height: 60px;
+    }
+    #redes ul li a .bi {
+        font-size: 30px;
+        position: relative;
+        color: #262626;
+        top: -15px;
+        transition: .5s;
+        z-index: 3;
+    }
+    #btn-whats img{
+        width: 45px;
+    }
+    #btn-whats button{
+        bottom: 80px;
+    }
+}
+
+
+
+
+
+
+
